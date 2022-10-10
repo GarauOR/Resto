@@ -16,6 +16,29 @@ img {
     width: 100%;
 }
 
+.section-title {
+    text-align: center;
+    margin: 2rem auto;
+    font-family: 'Rancho', cursiv;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.section-title span {
+    display: block;
+    color: #e76f51;
+    margin-top: 0.5rem;
+}
+
+.btn {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+}
+
 /* header style start*/
 header nav ul li {
     display: none;
@@ -75,10 +98,304 @@ header nav ul li {
 /* hero style end */
 
 
-/* header style start*/
-/* header style end */
+/* specialties style start*/
+.specialty-category {
+color: #e76f51;
+font-size: 0.9rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+padding-bottom: 0.5rem;
+position: relative;
+}
 
-@media screen and (min-width: 725px) {
+.specialty-category::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 0.5rem;
+    border-bottom: 1px solid black;
+}
+
+.specialty-description {
+    font-size: 1.1rem;
+    font-weight: lighter;
+    padding-bottom: 1rem;
+}
+
+.specialty-title {
+font-size: 2.6rem;
+display: block;
+position: relative;
+padding-bottom: 0.5rem;
+margin-bottom: 1rem;
+}
+
+.specialty-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 0.5rem;
+    border-bottom: 1px solid black;
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/*.specialty-image {
+box-shadow: 5px 5px 15px rgba(200, 200, 200, 0.8);
+}*/
+
+/* specialties style end */
+
+/* menu style start*/
+.menu-title {
+font-size: 2.5rem;
+font-weight: lighter;
+}
+
+.menu-item {
+display: flex;
+margin: 2rem 0px;
+position: relative;
+align-items: center;
+padding: 0px 2rem 2rem 2rem;
+}
+
+.menu-item::after {
+content: "";
+position: absolute;
+bottom: 0px;
+right: 0px;
+left: 0px;
+height: 0.5rem;
+border-bottom: 1px dashed black;
+}
+
+.menu-item:last-child:after {
+border: none;
+}
+
+.menu-item img {
+width: 60px;
+height: 60px;
+border-radius: 30px;
+margin-right: 1rem;
+}
+
+.menu-item section h3 {
+margin-bottom: 1rem;
+}
+
+.menu-item section h3 span {
+margin-left: 3rem;
+font-weight: lighter;
+color: #333333;
+}
+
+.menu-item p {
+color: #333333;
+}
+/* menu style end */
+
+/* Reviews style start*/
+    .testimony-hero {
+        position: relative;
+    }
+
+    .testimony-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        color: white;
+        font-size: 1.4rem;
+        width: 80%;
+        height: 100%;
+        font-weight: lighter;
+    }
+
+    .testimony.quote {
+        font-size: 6rem;
+    }
+/* Reviews style end */
+
+/* experts style start*/
+.expert {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.expert-img {
+    height: 60vh;
+}
+
+.expert-info {
+    background-color: white;
+    position: absolute;
+    width: 80%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto 1.5rem auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.expert-info p {
+    color: #333333;
+    font-weight: lighter;
+    margin: 1rem 0px;
+}
+
+.expert-social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0px auto;
+    color: #0a66c2;
+}
+
+.expert-social :last-child {
+    color: #55acee;
+}
+/* experts style end */
+
+/* reservation style start*/
+.reservation {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.reservation-img {
+    height: 80vh;
+}
+
+.reservation-form-section {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.reservation-form-section h2 {
+    color: white;
+    margin-bottom: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem 1.5rem 1.5rem; 
+}
+
+textarea, input[type=text], input[type=email], input[type=number] {
+    padding: 10px;
+    margin-bottom: 1.6rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-input-half {
+    width: calc(50% - 0.7rem);
+}
+
+.half-input :first-child {
+    margin-right: 1rem;
+}
+
+input[type=submit] {
+    align-self: flex-end;
+}
+
+input[type=submit]:hover {
+    background-color: #e76f51;
+}
+/* reservation style end */
+
+
+/* footer style start*/
+footer {
+    background-color: #333333;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.footer-info-p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-brand {
+    font-family: 'Rancho', cursiv;
+    font-size: 4rem;
+    display: block;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 1rem auto;
+    font-size: 2.5rem;
+}
+
+.footer-title {
+    color: #e76f51;
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer-title::after {
+content: "";
+position: absolute;
+bottom: 0px;
+left: 0px;
+right: 0px;
+height: 0.5rem;
+border-bottom: 1px solid white;
+width: 25%;
+}
+
+.footer-times {
+    list-style: none;
+}
+
+.footer-times li {
+    padding-bottom: 1rem;
+}
+
+.footer-map {
+    width: 50%;
+    display: block;
+    margin: 1rem auto;
+}
+
+.direction {
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+/* footer style end */
+
+@media screen and (min-width: 768px) {
     body {
         max-width: 960px;
         margin: 0 auto;
@@ -123,5 +440,86 @@ header nav ul li {
 
     .hero-info-block {
         display: block;
+    }
+
+    .specialties {
+        padding: 2rem;
+        background-color: #efefef;
+    }
+    
+    .specialty-item {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .specialty-image {
+        width: 375px;
+    }
+
+    .price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .price span {
+        margin-bottom: 1rem;
+    }
+
+    .specialty-item:last-child .specialty-image {
+        order: 1;
+    }
+
+    .specialty-item:last-child .specialty-info {
+        order: 2;
+    }
+
+    .menu-container {
+        display: flex;
+        padding: 2rem;
+    }
+
+    .menu-title {
+        text-align: center;
+    }
+
+    .menu-item::after {
+        width: 75%;
+        margin: 0px auto;
+    }
+
+    .experts {
+        padding: 2rem;
+    }
+
+    .experts-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .expert.img {
+        height: 350px;
+    }
+
+    .reservation-form-section {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 40%;
+        height: 90%;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        gap: 2rem;
+    }
+
+    .footer-1, .footer-2, .footer-3 {
+        flex: 1 1 350px;
     }
 }
